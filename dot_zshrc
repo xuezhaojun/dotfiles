@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/xuezhao/.oh-my-zsh"
+export ZSH="/$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -102,8 +102,15 @@ alias zshconfig="mate ~/.zshrc"
 alias ohmyzsh="mate ~/.oh-my-zsh"
 bindkey -v
 
-# XueZhao kubernetes shortcut
-alias git_del_merged='git branch --merged | egrep -v "(^\*|master|main|dev)" | xargs git branch -d'
-
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+# Git Commands
+alias git_del_merged='git branch --merged | egrep -v "(^\*|master|main|dev)" | xargs git branch -d'
+
+# RedHat
+alias kich='kind create cluster --name hub'
+alias kidh='kind delete cluster --name hub'
+alias kicc='kind create cluster --name cluster1'
+alias kidc='kind delete cluster --name cluster1'
+alias kirecreate='kidh && kidc && kich && kicc'
+alias kils="kind get clusters"
