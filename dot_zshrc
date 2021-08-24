@@ -5,7 +5,7 @@
 export ZSH="/$HOME/.oh-my-zsh"
 
 # Use custom on-my-zsh path
-echo ${ZSH_CUSTOM:="$HOME/.oh-my-zsh-custom"}
+# echo ${ZSH_CUSTOM:="$HOME/.oh-my-zsh-custom"}
 if [ ! -d $ZSH_CUSTOM ]; then
 	echo "$ZSH_CUSTOM not found, please run: git clone https://github.com/xuezhaojun/on-my-zsh-custom.git $ZSH_CUSTOM"
 	echo "cd $ZSH_CUSTOM && git pull --recurse-submodules && git submodule update --init --recursive && source ~/.zshrc"
@@ -127,3 +127,5 @@ alias kils="kind get clusters"
 # Go
 export PATH=$PATH:/root/go/bin
 
+# autojump
+alias j='autojump'
