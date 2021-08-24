@@ -123,3 +123,7 @@ alias kicc='kind create cluster --name cluster1'
 alias kidc='kind delete cluster --name cluster1'
 alias kirecreate='kidh && kidc && kich && kicc'
 alias kils="kind get clusters"
+
+# Go
+export PATH=$PATH:/root/go/bin
+
