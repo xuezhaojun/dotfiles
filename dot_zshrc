@@ -125,4 +125,4 @@ alias kirecreate='kidh && kidc && kich && kicc'
 alias kils="kind get clusters"
 
 # Go
-export PATH=$PATH:/root/go/bin
+export PATH=$PATH:/root/go/bin:/Users/xuezhao/go/bin
