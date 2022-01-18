@@ -126,3 +126,6 @@ alias kils="kind get clusters"
 
 # Go
 export PATH=$PATH:/root/go/bin:/Users/xuezhao/go/bin
+
+# vscode
+export KUBECONFIG=/Users/xuezhao/kubeconfigs/default.kubeconfig
