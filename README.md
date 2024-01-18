@@ -1,9 +1,3 @@
-# dotfiles
+# dotfiles for codespaces
 
 Mainly used to setup my github codespaces.
-
-## Setup
-
-```
-brew bundle --file ~/.Brewfile
-```
