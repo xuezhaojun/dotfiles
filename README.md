@@ -1,6 +1,6 @@
 # dotfiles
 
-Create a level of abstraction between work and workstation!
+Mainly used to setup my github codespaces.
 
 ## Setup
 
