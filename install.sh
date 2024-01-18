@@ -1,1 +1,2 @@
-echo "install somethings in the future"
+echo "Install go libs"
+sh ./install/go.sh
