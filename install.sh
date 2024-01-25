@@ -18,6 +18,7 @@ source ~/.bashrc
 
 echo "Install startship"
 brew install starship
+(echo; echo 'eval "$(starship init bash)"') >> /home/codespace/.bashrc
 
 # -- install stolostron related dependencies
 
