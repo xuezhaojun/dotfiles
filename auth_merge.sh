@@ -18,7 +18,7 @@ if [ -z "$docker_auth" ] || [ -z "$config_contents" ]; then
 fi
 
 # Merge the contents
-merged_contents=$(jq -s '.[0].auths * .[1].auths | {auths: .}' <<<"$docker_auth $config_contents")
+merged_contents=$(echo "$docker_auth $config_contents" | jq -s '.[0].auths * .[1].auths | {auths: .}')
 echo "merged_contents: $merged_contents"
 
 # Save the merged contents back into ~/.docker/config.json
