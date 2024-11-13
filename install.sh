@@ -17,6 +17,7 @@ echo | /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/ins
 (echo; echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"') >> /home/codespace/.zshrc
     eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
+brew install kind
 brew install autojump
 brew install zsh-autosuggestions
 echo "source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh" >> /home/codespace/.zshrc
