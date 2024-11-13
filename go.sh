@@ -1,1 +1,1 @@
-go install github.com/openshift/imagebuilder/cmd/imagebuilder@v1.2.3
+go install github.com/openshift/imagebuilder/cmd/imagebuilder@v1.2.15
